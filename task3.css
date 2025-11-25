@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.controls button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.progress-container {
+  background: #444;
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.progress {
+  background: limegreen;
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+}
+
+.time {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#playlist li {
+  cursor: pointer;
+  padding: 5px;
+  transition: background 0.3s;
+}
+
+#playlist li:hover {
+  background: #333;
+}

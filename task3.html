@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+  <div class="player">
+    <h2 id="title">Title</h2>
+    <h3 id="artist">Artist</h3>
+
+    <audio id="audio"></audio>
+
+    <div class="controls">
+      <button onclick="prevSong()">⏮️</button>
+      <button onclick="togglePlay()">▶️/⏸️</button>
+      <button onclick="nextSong()">⏭️</button>
+    </div>
+
+    <div class="progress-container" onclick="setProgress(event)">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="time">
+      <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+    </div>
+
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+
+    <ul id="playlist">
+      <li onclick="loadSong(0)">Song 1</li>
+      <li onclick="loadSong(1)">Song 2</li>
+      <li onclick="loadSong(2)">Song 3</li>
+    </ul>
+  </div>
+
+  <script src="task3.js"></script>
+</body>
+</html>
